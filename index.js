@@ -10,9 +10,9 @@ function displayPosts(posts) {
     const p = document.createElemnt ('p')
     p.textcontent = post.body;
 
-    li.appendChild("h1");
-    li.appendChild('p');
-    postList.appendChild('li');
+    li.appendChild(h1);
+    li.appendChild(p);
+    postList.appendChild(li);
     }
    );
 }
