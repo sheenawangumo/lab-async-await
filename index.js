@@ -7,7 +7,7 @@ function displayPosts(posts) {
     const h1 = document.createElement('h1');
     h1.textContent = post.title;
 
-    const p = document.createElemnt ('p')
+    const p = document.createElement ('p')
     p.textcontent = post.body;
 
     li.appendChild(h1);
@@ -30,5 +30,5 @@ async function fetchAndDisplay(){
 }
 
 fetchAndDisplay();
-displayPosts();
+
 
