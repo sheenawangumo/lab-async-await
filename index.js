@@ -17,7 +17,7 @@ function displayPosts(posts) {
    );
 }
 
-async function fetchAndDisplay(call_displayPosts) {
+async function fetchAndDisplay(){
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/posts');
         const data = await response.json ();
@@ -25,8 +25,9 @@ async function fetchAndDisplay(call_displayPosts) {
     catch(error){
         console.log('Oops, something went wrong:', error);
     }
- call_displayPosts()   
+  
 }
 
-fetchAndDisplay(displayPosts);
+fetchAndDisplay();
+displayPosts();
 
